@@ -12,7 +12,7 @@ outputs:
     description: 'State of found pull request'
 runs:
   using: 'node12'
-  main: 'dist/main.js'
+  main: 'lib/main.js'
 branding:
   icon: 'tag'
   color: 'green'
