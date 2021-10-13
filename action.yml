@@ -1,11 +1,18 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Get PR from GitHub'
+description: 'Get PR from GitHub'
 inputs:
-  milliseconds: # change this
+  GITHUB_TOKEN :
+    description: 'GitHub Token for getting the pull request'
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  PullRequestNumber :
+    description: 'Pull request number'
+    required: true
+outputs:
+  pullRequestState:
+    description: 'State of found pull request'
 runs:
   using: 'node12'
   main: 'dist/index.js'
+branding:
+  icon: 'tag'
+  color: 'green'
