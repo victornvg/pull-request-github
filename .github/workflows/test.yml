@@ -12,10 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: get pull request number
-        uses: KenHaNVG/demo-action@main
+        uses: tuannguyennv/first-github-action@main
         id: get_pr
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PullRequestNumber: 5
+          pr_number: 5
       - name: show result
-        run: echo pull request state ${{ steps.get_pr.outputs.pullRequestState }}
+        run: echo pull request state ${{ steps.get_pr.outputs.pr_state }}
