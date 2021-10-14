@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: get pull request number
-        uses: nhannguyennvg/github-action-demo@main
+        uses: edwardtuan/pull-request-git@main
         id: get_pr
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
