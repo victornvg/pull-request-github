@@ -15,7 +15,7 @@ jobs:
         uses: bnlinhlang/GitHubActionPractice@1.0.0
         id: get_pr
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          pullrequestnumber: 5
+          Token: ${{ secrets.GITHUB_TOKEN }}
+          PullRequestNumber: 5
       - name: show result
         run: echo pull request state ${{ steps.get_pr.outputs.status }}
